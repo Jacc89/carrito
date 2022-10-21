@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductComponent } from './components/product/product.component';
-import { ServicesCartComponent } from './services/services-cart/services-cart.component';
+import { CartRoutingModule } from './cart-routing.module';
 
 
 
@@ -12,15 +12,17 @@ import { ServicesCartComponent } from './services/services-cart/services-cart.co
     HeaderComponent,
     CartComponent,
     ProductComponent,
-    ServicesCartComponent
+    
   ],
   imports: [
-    CommonModule
-  ], exports:[
+    CommonModule,
+    CartRoutingModule
+  ], 
+  exports:[
     HeaderComponent,
     CartComponent,
     ProductComponent,
-    ServicesCartComponent
+    
   ]
 })
 export class CarsModule { }
