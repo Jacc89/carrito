@@ -34,8 +34,8 @@
                 <img src="{{item.image}}" alt="">
                 <h5 class="tamaño">{{item.title}}</h5>
                 <p class="tamaño">{{item.description}}</p>
-                <p> {{item.price}}</p>
-                <button class="btn btn-primary">Add to cart</button>
+                <p><strong>Proce:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" (click)="addToCart(item)">Add to cart</button>
     
             </div>
         </ng-container>    

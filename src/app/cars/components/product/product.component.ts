@@ -16,7 +16,15 @@ export class ProductComponent implements OnInit {
     this.service.getProduct()
     .subscribe((res: any)=>{
       this.List = res;
+      this.List.forEach((a:any) => {
+        Object.assign(a, {quantity:1, total:a.price});
+        
+      });
     })
+  }
+  addToCart(item:any){
+    this.service.addToCart(item);
+
   }
 
 }
