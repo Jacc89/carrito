@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarsModule } from './cars/cars.module';
 import { HttpClientModule } from '@angular/common/http';
-// import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({

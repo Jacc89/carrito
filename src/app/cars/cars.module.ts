@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartRoutingModule } from './cart-routing.module';
+import { FilterPipe } from './shared/filter.pipe';
 
 
 
@@ -12,6 +13,7 @@ import { CartRoutingModule } from './cart-routing.module';
     HeaderComponent,
     CartComponent,
     ProductComponent,
+    FilterPipe,
     
   ],
   imports: [
@@ -22,6 +24,7 @@ import { CartRoutingModule } from './cart-routing.module';
     HeaderComponent,
     CartComponent,
     ProductComponent,
+    FilterPipe
     
   ]
 })
