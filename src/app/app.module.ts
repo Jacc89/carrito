@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CarsModule } from './cars/cars.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 @NgModule({
   declarations: [
@@ -17,9 +18,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CarsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[
+    AppRoutingModule,
+    CarsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxPaginationModule
+  ]
 })
 export class AppModule { }

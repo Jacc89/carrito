@@ -7,9 +7,10 @@
             <strong >Jacc89</strong>
             <div class="form-group">
                 <input type="text" 
-                       class="form-control" 
-                       placeholder="search products">
-                       <span class="fas fa-search search-icon"></span>
+                class="form-control"
+                 [(ngModel)]="searchTerm"
+                 (keyup)="search($event)" 
+                 placeholder="search products">
             </div>
             
     

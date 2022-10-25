@@ -12,6 +12,7 @@ export class CartService {
   constructor(private http: HttpClient) { }
    public cartItemList : any = [];
    public productList = new BehaviorSubject<any>([]); 
+   public search = new BehaviorSubject<string>(""); 
 
   ApiUrl:string = 'https://fakestoreapi.com/products/';
 
